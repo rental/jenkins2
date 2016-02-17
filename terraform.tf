@@ -1,5 +1,5 @@
 provider "azure" {
-  publish_settings = "${file("credentials.publishsettings")}"
+  publish_settings = "${file("/var/lib/jenkins/credentials.publishsettings")}"
 }
 
 resource "azure_hosted_service" "default" {
